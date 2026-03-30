@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tiny Ants</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #000000, #0f2027);
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 100px 20px;
+}
+
+h1 {
+  font-size: 60px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ff00; }
+  to { text-shadow: 0 0 40px #00ff99; }
+}
+
+/* BUTTON */
+.btn {
+  padding: 15px 30px;
+  background: lime;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ff99;
+  transform: scale(1.1);
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>🐜 Tiny Ants</h1>
+  <p>Discover the amazing world of ants</p>
+  <button class="btn">Explore</button>
+</header>
+
+<section>
+  <h2>About Ants</h2>
+
+  <div class="card">
+    <h3>Strong</h3>
+    <p>Ants can carry many times their body weight.</p>
+  </div>
+
+  <div class="card">
+    <h3>Smart</h3>
+    <p>They work together in colonies.</p>
+  </div>
+
+  <div class="card">
+    <h3>Organized</h3>
+    <p>Each ant has a specific role.</p>
+  </div>
+</section>
+
+</body>
+</html>
